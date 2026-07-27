@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TjnEngineCore",
-            url: "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.0/TjnEngineKit-1.0.0.xcframework.zip",
-            checksum: "c5ab750904d65f8b2d6340937eb8ce6646fb80952a767c219bf825f3d92b4103"
+            url: "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/TjnEngineKit-1.0.1.xcframework.zip",
+            checksum: "234b8b344678f6fe9890976b1808824f8fac9e2ac55a9f134793c6d28f22e6eb"
         ),
         .target(
             name: "TjnEngineKit",

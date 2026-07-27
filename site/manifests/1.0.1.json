@@ -1,0 +1,277 @@
+{
+  "artifacts": [
+    {
+      "architecture": "wasm32",
+      "backend": "webgl2",
+      "bytes": 297234,
+      "contentType": "application/x-tar",
+      "kind": "package",
+      "minimumSystem": "WebAssembly BigInt + WebGL 2",
+      "name": "tjn-web-1.0.1.tgz",
+      "platform": "web",
+      "sha256": "128558987742db271737d6eb8c8eca9869cc5c6d4707863da35a6f82b8ad947d",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/tjn-web-1.0.1.tgz"
+    },
+    {
+      "architecture": "wasm32",
+      "bytes": 2584,
+      "contentType": "application/zip",
+      "kind": "symbols",
+      "name": "tjn-web-1.0.1-symbols.zip",
+      "platform": "web",
+      "sha256": "0b290f2739cc90946ef1991dbfaa2b56a8efdbe1df013244c6e81675abeb8c86",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/tjn-web-1.0.1-symbols.zip"
+    },
+    {
+      "architecture": "arm64-v8a+x86_64",
+      "backend": "gles",
+      "bytes": 4188609,
+      "contentType": "application/octet-stream",
+      "kind": "package",
+      "minimumSystem": "Android API 26",
+      "name": "tjn-engine-android-1.0.1.aar",
+      "platform": "android",
+      "sha256": "09817c76e1d856d215ce7596ba08d1774ee2c404269618dd54db169a96c5fdb4",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/tjn-engine-android-1.0.1.aar"
+    },
+    {
+      "architecture": "arm64-v8a+x86_64",
+      "bytes": 1620064,
+      "contentType": "application/zip",
+      "kind": "maven-repository",
+      "name": "tjn-engine-android-maven-1.0.1.zip",
+      "platform": "android",
+      "sha256": "363a07faf92f0daf43a9f604d41994590b8943a252c9aba3c566473e2868839d",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/tjn-engine-android-maven-1.0.1.zip"
+    },
+    {
+      "architecture": "arm64-v8a+x86_64",
+      "bytes": 8436505,
+      "contentType": "application/zip",
+      "kind": "symbols",
+      "name": "tjn-engine-android-1.0.1-symbols.zip",
+      "platform": "android",
+      "sha256": "9ea8a48370126b46de3f2fe78e8aa3857a9e453bd0fddf2b494668b2a5cf4b2d",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/tjn-engine-android-1.0.1-symbols.zip"
+    },
+    {
+      "architecture": "arm64+simulator",
+      "backend": "metal",
+      "bytes": 5375546,
+      "contentType": "application/zip",
+      "kind": "package",
+      "minimumSystem": "iOS 13.0",
+      "name": "TjnEngineKit-1.0.1.xcframework.zip",
+      "platform": "ios",
+      "sha256": "234b8b344678f6fe9890976b1808824f8fac9e2ac55a9f134793c6d28f22e6eb",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/TjnEngineKit-1.0.1.xcframework.zip"
+    },
+    {
+      "architecture": "arm64+x86_64",
+      "backend": "metal",
+      "bytes": 5375546,
+      "contentType": "application/zip",
+      "kind": "package",
+      "minimumSystem": "macOS 11.0",
+      "name": "TjnEngineKit-1.0.1.xcframework.zip",
+      "platform": "macos",
+      "sha256": "234b8b344678f6fe9890976b1808824f8fac9e2ac55a9f134793c6d28f22e6eb",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/TjnEngineKit-1.0.1.xcframework.zip"
+    },
+    {
+      "architecture": "arm64+simulator+macos",
+      "bytes": 65,
+      "contentType": "application/octet-stream",
+      "kind": "checksum",
+      "name": "TjnEngineKit-1.0.1.checksum",
+      "platform": "ios",
+      "sha256": "b2fc5c6f985651fc22edfe8e8ee80bc6dafbceec6e770698695641d6b6cadb19",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/TjnEngineKit-1.0.1.checksum"
+    },
+    {
+      "architecture": "arm64+simulator+macos",
+      "bytes": 1936,
+      "contentType": "application/zip",
+      "kind": "symbols",
+      "name": "TjnEngineKit-1.0.1-symbols.zip",
+      "platform": "ios",
+      "sha256": "99fcc6c43909f7ab1b0f166435defc82f116fea2a2ab0b27b661860ec0dc37e5",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/TjnEngineKit-1.0.1-symbols.zip"
+    },
+    {
+      "architecture": "x64",
+      "backend": "d3d11",
+      "bytes": 1018937,
+      "contentType": "application/zip",
+      "kind": "package",
+      "minimumSystem": "Windows 10 2004",
+      "name": "tjn-engine-windows-x64-1.0.1.zip",
+      "platform": "windows",
+      "sha256": "f3f3b8ae330671b173041a0281de564667c9c4fe48ac7de492b2734e5ad3a5dc",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/tjn-engine-windows-x64-1.0.1.zip"
+    },
+    {
+      "architecture": "arm64",
+      "backend": "d3d11",
+      "bytes": 924906,
+      "contentType": "application/zip",
+      "kind": "package",
+      "minimumSystem": "Windows 10 2004",
+      "name": "tjn-engine-windows-arm64-1.0.1.zip",
+      "platform": "windows",
+      "sha256": "ae10bf1458df95cad1b39e60c841930b985dfaa4a46ba21cb7552dc90cc3666b",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/tjn-engine-windows-arm64-1.0.1.zip"
+    },
+    {
+      "architecture": "x64+arm64",
+      "bytes": 5518693,
+      "contentType": "application/zip",
+      "kind": "symbols",
+      "name": "tjn-engine-windows-1.0.1-symbols.zip",
+      "platform": "windows",
+      "sha256": "31c3b9f6317da11b459f08fdb2b48f832b96ca977dcaf4b22195eaa12298766e",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/tjn-engine-windows-1.0.1-symbols.zip"
+    },
+    {
+      "architecture": "all",
+      "bytes": 8034,
+      "contentType": "application/zip",
+      "kind": "licenses",
+      "name": "threejsnative-sdk-1.0.1-licenses.zip",
+      "platform": "release",
+      "sha256": "d4267ae1e3e976b96ac9c30d3e9bc06232fa0c2c0cf984c603fbc4e17a3d10ec",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/threejsnative-sdk-1.0.1-licenses.zip"
+    },
+    {
+      "architecture": "all",
+      "bytes": 10717,
+      "contentType": "application/json",
+      "kind": "evidence",
+      "name": "threejsnative-sdk-1.0.1.evidence.json",
+      "platform": "release",
+      "sha256": "751e214c685e8a132a79e77d41b749f07f7badc8021a3fa27e2294a00cbac93f",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/threejsnative-sdk-1.0.1.evidence.json"
+    },
+    {
+      "architecture": "all",
+      "bytes": 2251,
+      "contentType": "application/json",
+      "kind": "reproducibility",
+      "name": "threejsnative-sdk-1.0.1.reproducibility.json",
+      "platform": "release",
+      "sha256": "7221743d7c633bc42a3e6e9a101b617004748bb375d7c5da3a031c83c0ce1ddb",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/threejsnative-sdk-1.0.1.reproducibility.json"
+    },
+    {
+      "architecture": "all",
+      "bytes": 6263,
+      "contentType": "application/json",
+      "kind": "sbom",
+      "name": "threejsnative-sdk-1.0.1.sbom.spdx.json",
+      "platform": "release",
+      "sha256": "1ab3d2b860b9da512888d4ee66d9dcbced84ff4ffc8f90f2e62d8118a1c6b890",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/threejsnative-sdk-1.0.1.sbom.spdx.json"
+    },
+    {
+      "architecture": "all",
+      "bytes": 2747,
+      "contentType": "application/json",
+      "kind": "provenance",
+      "name": "threejsnative-sdk-1.0.1.provenance.json",
+      "platform": "release",
+      "sha256": "6898f716edfe522fa8ebcb50a97e155ca0d439d71e01f0caceadb7480141d3a2",
+      "url": "https://github.com/spawn66336/threejsnative-sdk/releases/download/1.0.1/threejsnative-sdk-1.0.1.provenance.json"
+    }
+  ],
+  "assetSchemaDigest": "sha256:248afdf5acab47de2fd4f821a7fa34b778cc0e8bc612e09c5de8c6ded10d7811",
+  "engineAbi": 1,
+  "gates": {
+    "androidRuntime": {
+      "evidence": "threejsnative-sdk-1.0.1.evidence.json",
+      "required": true,
+      "status": "passed"
+    },
+    "appleRuntime": {
+      "evidence": "threejsnative-sdk-1.0.1.evidence.json",
+      "required": true,
+      "status": "passed"
+    },
+    "metahumanContract": {
+      "evidence": "threejsnative-sdk-1.0.1.evidence.json",
+      "required": true,
+      "status": "passed"
+    },
+    "packageSecurity": {
+      "evidence": "threejsnative-sdk-1.0.1.evidence.json",
+      "required": true,
+      "status": "passed"
+    },
+    "reproducibleBuilds": {
+      "evidence": "threejsnative-sdk-1.0.1.evidence.json",
+      "required": true,
+      "status": "passed"
+    },
+    "sourceClean": {
+      "evidence": "threejsnative-sdk-1.0.1.evidence.json",
+      "required": true,
+      "status": "passed"
+    },
+    "webRuntime": {
+      "evidence": "threejsnative-sdk-1.0.1.evidence.json",
+      "required": true,
+      "status": "passed"
+    },
+    "windowsRuntime": {
+      "evidence": "threejsnative-sdk-1.0.1.evidence.json",
+      "required": true,
+      "status": "passed"
+    }
+  },
+  "parityDigest": "sha256:92b26358d8fd759c01076dd223af5cbad78ceefa981182034cf7d83b44041e99",
+  "publicSymbolDigest": "sha256:d653976a29012e7458febadc95a5daae3e99594af09dead353c80e19ed2121bc",
+  "publishedAt": "2026-07-27T19:23:01Z",
+  "releaseUrl": "https://github.com/spawn66336/threejsnative-sdk/releases/tag/1.0.1",
+  "schema": "tjn.sdk-release.v1",
+  "signing": {
+    "attestation": "github-attestation",
+    "checksums": "sha256",
+    "provenance": "threejsnative-sdk-provenance.v1"
+  },
+  "source": {
+    "commit": "f98c99f36a5db97c02d885e381cb5927451778ca",
+    "repository": "https://github.com/spawn66336/ThreejsNative"
+  },
+  "toolchains": [
+    {
+      "architecture": "arm64-v8a+x86_64",
+      "compiler": "openjdk version \"17.0.19\" 2026-04-21 | OpenJDK Runtime Environment Temurin-17.0.19+10 (build 17.0.19+10) | OpenJDK 64-Bit Server VM Temurin-17.0.19+10 (build 17.0.19+10, mixed mode, sharing)",
+      "platform": "android",
+      "runner": "ubuntu24 20260720.247.2 x86_64"
+    },
+    {
+      "architecture": "ios+macos-universal",
+      "compiler": "Xcode 16.4 | Build version 16F6 | Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5) | Target: arm64-apple-macosx15.0 | swift-driver version: 1.120.5",
+      "platform": "apple",
+      "runner": "macos15 20260715.0234.1 arm64"
+    },
+    {
+      "architecture": "wasm32",
+      "compiler": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.4 (fe5be6afdff43ad58860d821fcc8572a23f92d19) | Copyright (C) 2026 the Emscripten authors (see AUTHORS.txt) | This is free and open source software under the MIT license.",
+      "platform": "web",
+      "runner": "ubuntu24 20260720.247.2 x86_64"
+    },
+    {
+      "architecture": "arm64",
+      "compiler": "cmake version 4.4.0 | CMake suite maintained and supported by Kitware (kitware.com/cmake). | VisualStudioVersion=unknown",
+      "platform": "windows",
+      "runner": "win11-vs2026-arm64 20260714.96.1 ARM64"
+    },
+    {
+      "architecture": "x64",
+      "compiler": "cmake version 4.4.0 | CMake suite maintained and supported by Kitware (kitware.com/cmake). | VisualStudioVersion=unknown",
+      "platform": "windows",
+      "runner": "win25-vs2026 20260714.173.1 AMD64"
+    }
+  ],
+  "version": "1.0.1"
+}
