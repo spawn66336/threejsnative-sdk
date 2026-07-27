@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spawn66336.github.io/threejsnative-sdk/schemas/tjn.sdk-release.v1.schema.json",
+  "title": "ThreejsNative SDK release manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "version",
+    "source",
+    "engineAbi",
+    "parityDigest",
+    "assetSchemaDigest",
+    "publicSymbolDigest",
+    "releaseUrl",
+    "artifacts",
+    "gates",
+    "toolchains",
+    "signing",
+    "publishedAt"
+  ],
+  "properties": {
+    "schema": { "const": "tjn.sdk-release.v1" },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?$"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "commit"],
+      "properties": {
+        "repository": { "type": "string", "format": "uri" },
+        "commit": { "type": "string", "pattern": "^[0-9a-f]{40}$" }
+      }
+    },
+    "engineAbi": { "type": "integer", "minimum": 1 },
+    "parityDigest": { "$ref": "#/$defs/prefixedDigest" },
+    "assetSchemaDigest": { "$ref": "#/$defs/prefixedDigest" },
+    "publicSymbolDigest": { "$ref": "#/$defs/prefixedDigest" },
+    "releaseUrl": { "type": "string", "format": "uri" },
+    "artifacts": {
+      "type": "array",
+      "minItems": 17,
+      "maxItems": 17,
+      "items": { "$ref": "#/$defs/artifact" }
+    },
+    "gates": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/gate" },
+      "required": [
+        "sourceClean",
+        "webRuntime",
+        "windowsRuntime",
+        "appleRuntime",
+        "androidRuntime",
+        "metahumanContract",
+        "packageSecurity",
+        "reproducibleBuilds"
+      ]
+    },
+    "toolchains": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["platform", "architecture", "runner", "compiler"],
+        "properties": {
+          "platform": { "enum": ["web", "windows", "apple", "android"] },
+          "architecture": { "type": "string", "minLength": 1 },
+          "runner": { "type": "string", "minLength": 1 },
+          "compiler": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "signing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["checksums", "provenance", "attestation"],
+      "properties": {
+        "checksums": { "const": "sha256" },
+        "provenance": { "const": "threejsnative-sdk-provenance.v1" },
+        "attestation": { "const": "github-attestation" }
+      }
+    },
+    "publishedAt": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "prefixedDigest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "platform",
+        "architecture",
+        "name",
+        "url",
+        "bytes",
+        "sha256",
+        "contentType",
+        "kind"
+      ],
+      "properties": {
+        "platform": { "enum": ["web", "windows", "ios", "macos", "android", "release"] },
+        "architecture": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" },
+        "bytes": { "type": "integer", "minimum": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "contentType": { "type": "string", "minLength": 1 },
+        "kind": {
+          "enum": [
+            "package",
+            "symbols",
+            "maven-repository",
+            "checksum",
+            "sbom",
+            "provenance",
+            "reproducibility",
+            "evidence",
+            "licenses"
+          ]
+        },
+        "minimumSystem": { "type": "string" },
+        "backend": { "type": "string" }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "status", "evidence"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "status": { "const": "passed" },
+        "evidence": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
